@@ -1,0 +1,92 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  min-height: 100vh;
+}
+.card {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.card .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card .container .box {
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px;
+}
+.card .container > .box .text h2 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+}
+.card .container .box .text p {
+  line-height: 1.7;
+  color: hsla(0, 0%, 100%, 0.75);
+  height: 120px;
+}
+.card .container .box .text a {
+  margin-top: 60px;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px hsl(0, 0%, 95%) solid;
+  padding: 13px 27px;
+  display: inline-block;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: all 0.4s ease-in-out;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+.card .container .yellow a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card .container .cyan a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card .container .dark a {
+  color: hsl(179, 100%, 13%);
+}
+.card .container .box a:hover {
+  color: hsl(0, 0%, 95%);
+  background: transparent;
+}
+.box a:hover {
+  color: hsl(0, 0%, 95%);
+  background: transparent;
+}
+.card .container .cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.card .container .dark {
+  background-color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    margin: 4rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .card {
+    margin: 4rem 1.5rem;
+  }
+}
